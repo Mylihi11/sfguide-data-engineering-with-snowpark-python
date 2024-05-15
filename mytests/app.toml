@@ -1,0 +1,16 @@
+snowsql_config_path = "/Users/rpasternak/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[default]
+input_parameters = "(income float)"
+return_type = "float"
+name = "snowcliFunction"
+handler = "app.main"
+file = "app.zip"
+execute_as_caller = true
+
+[dev]
+database = "citibike_ml_backup"
+schema = "demo"
+role = "accountadmin\t"
+warehouse = "bi_large_wh"
